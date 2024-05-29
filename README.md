@@ -41,7 +41,7 @@ This API allows sellers to manage books via CSV uploads and buyers to view avail
 ### Authentication
 
 - **Register**
-    ```sh
+```sh
     curl --location --request POST 'http://localhost:3000/api/v1/auth/register' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -50,15 +50,18 @@ This API allows sellers to manage books via CSV uploads and buyers to view avail
     "password": "123",
     "role": "S" // "B" for buyer
 }'
+```
+
 
 - **Login**
-    ```sh
+```sh
     curl --location --request POST 'http://localhost:3000/api/v1/auth/login' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "email": "seller@vishesh.com",
     "password": "123"
 }'
+```
 
 ### Books
 - **Upload Books (Seller Only):**
